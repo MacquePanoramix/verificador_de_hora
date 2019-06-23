@@ -19,11 +19,12 @@ import time
 from django.contrib import admin
 from django.urls import path
 
-from core.views import verifica_hora
+from core.views import verifica_hora, verifica_hora2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('time/', verifica_hora),
+    path('time/oi', verifica_hora2),
 ]
 
 
